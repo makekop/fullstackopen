@@ -1,8 +1,17 @@
 const Content = (props) => {
     return (
-        <h2>
-            {props.part}: {props.excercises}
-        </h2>
+        <div style={{ fontWeight: "bold" }}>
+            <p>
+                {props.parts[0].name}: {props.parts[0].exercises}
+            </p>
+            <p>
+                {props.parts[1].name}: {props.parts[1].exercises}
+            </p>
+            <p>
+                {props.parts[2].name}: {props.parts[2].exercises}
+            </p>
+            <span />
+        </div>
     );
 };
 
